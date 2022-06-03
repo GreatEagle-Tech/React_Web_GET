@@ -2,8 +2,11 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import classes from "./Header.module.css";
 import droneIcon from "../assets/drone-icon.png";
+import { useNavigate } from "react-router-dom";
+import Store from "./store/Store";
 
 const Header = () => {
+  const navigate = useNavigate();
   const [headClass, setHeadClass] = useState(classes.navbar);
 
   const changeBackground = () => {
@@ -45,7 +48,7 @@ const Header = () => {
               className={(navData) => (navData.isActive ? classes.active : "")}
               to="/resourses"
             >
-              Resourses
+              Resources
             </NavLink>
           </li>
           <li>
@@ -57,7 +60,10 @@ const Header = () => {
             </NavLink>
           </li>
         </ul>
-        <button className={classes.btn}> Contact Us</button>
+        <button className={classes.btn} onClick={() => navigate("/store")}>
+          {/* <a href="/store">Store</a> */}
+          Store
+        </button>
       </nav>
     </header>
   );
