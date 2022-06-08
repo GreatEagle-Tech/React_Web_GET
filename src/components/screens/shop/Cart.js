@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "../styles/cart.css";
+import "./cart.css";
 function Cart({ cart, setCart, handleChange }) {
   const [price, setPrice] = useState(0);
   const handleRemove = (id) => {
@@ -20,7 +20,6 @@ function Cart({ cart, setCart, handleChange }) {
 
   return (
     <div>
-      {" "}
       <article>
         {cart.map((item) => (
           <div className="cart_box" key={item.id}>

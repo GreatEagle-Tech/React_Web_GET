@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import list from "../data";
+import list from "../../../DUMMY_DATA/data";
 import Items from "./Items";
-//import "../styles/css/item.css";
-import "../styles/dashboard.css";
+import "./dashboard.css";
 
 function Dashboard({ handleClick }) {
   return (

@@ -1,5 +1,5 @@
 import classes from "./Home.module.css";
-import Card from "../UI/Card";
+import Card from "../../UI/Card";
 
 const Home = () => {
   let pageContent = ["Page Content"];

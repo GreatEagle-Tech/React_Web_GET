@@ -1,7 +1,5 @@
-import { Outlet, Link } from "react-router-dom";
-
 import React from "react";
-import "../styles/navbar.css";
+import "./navbar.css";
 import { useNavigate } from "react-router-dom";
 
 function Navbar({ setShow, size }) {
@@ -14,10 +12,10 @@ function Navbar({ setShow, size }) {
       />
       <nav>
         <div className="nav_box">
-          <span className="my_shop" onClick={() => setShow(true)}>
+          <span className="my_shop" onClick={() => navigate("/shop")}>
             My Shopping
           </span>
-          <div className="cart" onClick={() => setShow(false)}>
+          <div className="cart" onClick={() => navigate("/shop/cart")}>
             <span class="material-symbols-outlined">shopping_cart</span>
 
             <span>{size}</span>

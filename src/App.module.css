@@ -3,7 +3,7 @@
 }
 
 .main {
-  overflow: scroll;
+  overflow: auto;
   height: 700px;
 }
 

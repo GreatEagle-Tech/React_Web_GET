@@ -1,17 +1,16 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { createContext, useContext } from "react";
-import "../styles/css/app.css";
+import "./app.css";
 import React, { useState, useEffect } from "react";
 import Navbar from "./Navbar";
 import Dashboard from "./Dashboard";
-//import Items from "./components/Items";
 import Cart from "./Cart";
 import StoreCart from "./StoreCart";
 
 export const UserContext = createContext();
 export const UserContext2 = createContext();
 export const UserContext3 = createContext();
-function Store() {
+function Shop() {
   const [show, setShow] = useState(true);
   const [cart, setCart] = useState([]);
 
@@ -42,14 +41,6 @@ function Store() {
         <Navbar setShow={true} size={cart.length} />
 
         <Dashboard handleClick={handleClick} />
-
-        <UserContext.Provider value={cart}>
-          <UserContext2.Provider value={setCart}>
-            <UserContext3.Provider value={handleChange}>
-              <StoreCart />
-            </UserContext3.Provider>
-          </UserContext2.Provider>
-        </UserContext.Provider>
 
         {/* <Navbar setShow={true} size={cart.length} />
 
@@ -97,4 +88,4 @@ function Store() {
   // );
 }
 
-export default Store;
+export default Shop;

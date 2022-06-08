@@ -1,11 +1,11 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import classes from "./Header.module.css";
-import droneIcon from "../assets/drone-icon.png";
+import droneIcon from "../../assets/drone-icon.png";
 import { useNavigate } from "react-router-dom";
-import Store from "./store/Store";
+import Store from "../screens/shop/Shop";
 
-const Header = () => {
+const Header = (props) => {
   const navigate = useNavigate();
   const [headClass, setHeadClass] = useState(classes.navbar);
 
@@ -30,7 +30,7 @@ const Header = () => {
           <li>
             <NavLink
               className={(navData) => (navData.isActive ? classes.active : "")}
-              to="/home"
+              to="/#"
             >
               Home
             </NavLink>
@@ -60,7 +60,13 @@ const Header = () => {
             </NavLink>
           </li>
         </ul>
-        <button className={classes.btn} onClick={() => navigate("/store")}>
+        <button
+          className={classes.btn}
+          onClick={() => {
+            navigate("/shop");
+            props.onClickStore();
+          }}
+        >
           {/* <a href="/store">Store</a> */}
           Store
         </button>
