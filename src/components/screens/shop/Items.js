@@ -1,13 +1,13 @@
 import React from "react";
-
+import classes from "./Dashboard.module.css";
 function Items({ item, handleClick }) {
   const { title, price, image } = item;
   return (
-    <div className="card">
-      <div className="image_box">
+    <div className={classes.card}>
+      <div className={classes.image_box}>
         <img src={image} alt="" />
       </div>
-      <div className="details">
+      <div className={classes.details}>
         <p>{title}</p>
         <p>Price - {price}Rs</p>
         <button onClick={() => handleClick(item)}>Add to Cart</button>

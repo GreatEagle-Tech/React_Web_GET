@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import list from "../../../DUMMY_DATA/data";
 import Items from "./Items";
-import "./dashboard.css";
+import classes from "./Dashboard.module.css";
 
 function Dashboard({ handleClick }) {
   return (

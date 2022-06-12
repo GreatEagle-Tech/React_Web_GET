@@ -1,5 +1,5 @@
 import React from "react";
-import "./navbar.css";
+import classes from "./Navbar.module.css";
 import { useNavigate } from "react-router-dom";
 
 function Navbar({ setShow, size }) {
@@ -11,11 +11,11 @@ function Navbar({ setShow, size }) {
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
       />
       <nav>
-        <div className="nav_box">
-          <span className="my_shop" onClick={() => navigate("/shop")}>
+        <div className={classes.nav_box}>
+          <span className={classes.my_shop} onClick={() => navigate("/shop")}>
             My Shopping
           </span>
-          <div className="cart" onClick={() => navigate("/shop/cart")}>
+          <div className={classes.cart} onClick={() => navigate("/shop/cart")}>
             <span class="material-symbols-outlined">shopping_cart</span>
 
             <span>{size}</span>

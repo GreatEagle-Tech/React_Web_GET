@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./cart.css";
+import classes from "./Cart.module.css";
 function Cart({ cart, setCart, handleChange }) {
   const [price, setPrice] = useState(0);
   const handleRemove = (id) => {
@@ -22,8 +22,8 @@ function Cart({ cart, setCart, handleChange }) {
     <div>
       <article>
         {cart.map((item) => (
-          <div className="cart_box" key={item.id}>
-            <div className="cart_img">
+          <div className={classes.cart_box} key={item.id}>
+            <div className={classes.cart_img}>
               <img src={item.image} alt="" />
               <p>{item.title}</p>
             </div>
@@ -38,7 +38,7 @@ function Cart({ cart, setCart, handleChange }) {
             </div>
           </div>
         ))}
-        <div className="total">
+        <div className={classes.total}>
           <span>Total Price of your Cart</span>
           <span>Rs - {price}</span>
         </div>
