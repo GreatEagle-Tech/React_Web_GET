@@ -1,18 +1,14 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./app.css";
 import React, { useState, useEffect, useContext } from "react";
-import { UserContext, UserContext2, UserContext3 } from "./Shop";
-import Store from "./Shop";
+import { UserContext, UserContext2, UserContext3, UserContext5 } from "./Shop";
 import Navbar from "./Navbar";
-import Dashboard from "./Dashboard";
 import Cart from "./Cart";
 
 function StoreCart(props) {
-  // const cart = useContext(UserContext);
-  const cart = [];
+  const cart = useContext(UserContext);
   const setCart = useContext(UserContext2);
   const handleChange = useContext(UserContext3);
-
+  const length = useContext(UserContext5);
   return (
     <div
       style={{
@@ -22,9 +18,9 @@ function StoreCart(props) {
         minHeight: "300%",
       }}
     >
+      {" "}
       <React.Fragment>
-        <Navbar setShow={false} size="5" />
-
+        <Navbar setShow={false} size={length} />
         <Cart cart={cart} setCart={setCart} handleChange={handleChange} />
       </React.Fragment>
     </div>

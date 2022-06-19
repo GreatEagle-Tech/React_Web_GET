@@ -10,7 +10,9 @@ import StoreCart from "./StoreCart";
 export const UserContext = createContext();
 export const UserContext2 = createContext();
 export const UserContext3 = createContext();
-function Shop() {
+export const UserContext4 = createContext();
+export const UserContext5 = createContext();
+function Shop(props) {
   const [show, setShow] = useState(true);
   const [cart, setCart] = useState([]);
 
@@ -37,15 +39,17 @@ function Shop() {
         minHeight: "300%",
       }}
     >
-      <React.Fragment>
-        <Navbar setShow={true} size={cart.length} />
-
-        <Dashboard handleClick={handleClick} />
-
-        {/* <Navbar setShow={true} size={cart.length} />
-
-        <Dashboard handleClick={handleClick} /> */}
-      </React.Fragment>
+      <UserContext.Provider value={cart}>
+        <UserContext2.Provider value={setCart}>
+          <UserContext3.Provider value={handleChange}>
+            <UserContext4.Provider value={handleClick}>
+              <UserContext5.Provider value={cart.length}>
+                {props.children}
+              </UserContext5.Provider>
+            </UserContext4.Provider>
+          </UserContext3.Provider>
+        </UserContext2.Provider>
+      </UserContext.Provider>
     </div>
   );
 
