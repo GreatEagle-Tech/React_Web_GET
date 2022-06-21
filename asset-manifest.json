@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.cc0285a2.css",
-    "main.js": "/static/js/main.e8832075.js",
+    "main.js": "/static/js/main.e2d5923c.js",
     "static/js/787.e7d3d9f4.chunk.js": "/static/js/787.e7d3d9f4.chunk.js",
     "static/media/drone-bg.png": "/static/media/drone-bg.794c14f3271d693a5a5d.png",
     "static/media/drone-icon.png": "/static/media/drone-icon.1c6880ab34670ea2dadf.png",
     "index.html": "/index.html",
     "main.cc0285a2.css.map": "/static/css/main.cc0285a2.css.map",
-    "main.e8832075.js.map": "/static/js/main.e8832075.js.map",
+    "main.e2d5923c.js.map": "/static/js/main.e2d5923c.js.map",
     "787.e7d3d9f4.chunk.js.map": "/static/js/787.e7d3d9f4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cc0285a2.css",
-    "static/js/main.e8832075.js"
+    "static/js/main.e2d5923c.js"
   ]
 }
