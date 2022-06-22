@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/great-eagle/static/css/main.2d50f5fb.css",
-    "main.js": "/great-eagle/static/js/main.f42dd70c.js",
-    "static/js/787.e7d3d9f4.chunk.js": "/great-eagle/static/js/787.e7d3d9f4.chunk.js",
-    "static/media/drone-bg.png": "/great-eagle/static/media/drone-bg.794c14f3271d693a5a5d.png",
-    "static/media/drone-icon.png": "/great-eagle/static/media/drone-icon.1c6880ab34670ea2dadf.png",
-    "index.html": "/great-eagle/index.html",
-    "main.2d50f5fb.css.map": "/great-eagle/static/css/main.2d50f5fb.css.map",
-    "main.f42dd70c.js.map": "/great-eagle/static/js/main.f42dd70c.js.map",
-    "787.e7d3d9f4.chunk.js.map": "/great-eagle/static/js/787.e7d3d9f4.chunk.js.map"
+    "main.css": "/React_Web_GET/static/css/main.7deccbb1.css",
+    "main.js": "/React_Web_GET/static/js/main.e568b2f9.js",
+    "static/js/787.e7d3d9f4.chunk.js": "/React_Web_GET/static/js/787.e7d3d9f4.chunk.js",
+    "static/media/drone-bg.png": "/React_Web_GET/static/media/drone-bg.794c14f3271d693a5a5d.png",
+    "static/media/drone-icon.png": "/React_Web_GET/static/media/drone-icon.1c6880ab34670ea2dadf.png",
+    "index.html": "/React_Web_GET/index.html",
+    "main.7deccbb1.css.map": "/React_Web_GET/static/css/main.7deccbb1.css.map",
+    "main.e568b2f9.js.map": "/React_Web_GET/static/js/main.e568b2f9.js.map",
+    "787.e7d3d9f4.chunk.js.map": "/React_Web_GET/static/js/787.e7d3d9f4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2d50f5fb.css",
-    "static/js/main.f42dd70c.js"
+    "static/css/main.7deccbb1.css",
+    "static/js/main.e568b2f9.js"
   ]
 }
