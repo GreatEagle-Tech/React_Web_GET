@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.cc0285a2.css",
-    "main.js": "/static/js/main.e2d5923c.js",
-    "static/js/787.e7d3d9f4.chunk.js": "/static/js/787.e7d3d9f4.chunk.js",
-    "static/media/drone-bg.png": "/static/media/drone-bg.794c14f3271d693a5a5d.png",
-    "static/media/drone-icon.png": "/static/media/drone-icon.1c6880ab34670ea2dadf.png",
-    "index.html": "/index.html",
-    "main.cc0285a2.css.map": "/static/css/main.cc0285a2.css.map",
-    "main.e2d5923c.js.map": "/static/js/main.e2d5923c.js.map",
-    "787.e7d3d9f4.chunk.js.map": "/static/js/787.e7d3d9f4.chunk.js.map"
+    "main.css": "/great-eagle/static/css/main.2d50f5fb.css",
+    "main.js": "/great-eagle/static/js/main.f42dd70c.js",
+    "static/js/787.e7d3d9f4.chunk.js": "/great-eagle/static/js/787.e7d3d9f4.chunk.js",
+    "static/media/drone-bg.png": "/great-eagle/static/media/drone-bg.794c14f3271d693a5a5d.png",
+    "static/media/drone-icon.png": "/great-eagle/static/media/drone-icon.1c6880ab34670ea2dadf.png",
+    "index.html": "/great-eagle/index.html",
+    "main.2d50f5fb.css.map": "/great-eagle/static/css/main.2d50f5fb.css.map",
+    "main.f42dd70c.js.map": "/great-eagle/static/js/main.f42dd70c.js.map",
+    "787.e7d3d9f4.chunk.js.map": "/great-eagle/static/js/787.e7d3d9f4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cc0285a2.css",
-    "static/js/main.e2d5923c.js"
+    "static/css/main.2d50f5fb.css",
+    "static/js/main.f42dd70c.js"
   ]
 }
