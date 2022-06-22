@@ -10,8 +10,8 @@ function App() {
     <div className={classes.body}>
       <Header />
       <main className={classes.main} id="idMain">
-        <Routes>
-          <Route path="/home" element={<Home />}></Route>
+        <Routes basename={process.env.PUBLIC_URL}>
+          <Route path="/" element={<Home />}></Route>
           <Route path="/honours" element={<Honours />}></Route>
           <Route path="/seminars" element={<Seminars />}></Route>
         </Routes>
